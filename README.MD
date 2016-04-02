@@ -11,7 +11,8 @@
 * must be .jpg format
 * needs to be 300px wide
 * name must match the following number in folder (if last is 33 then number new pic will be 34)
-* code needs to be changed to match the number in particle_system file on line 8 to the new amount of pics: ```javascript
+* code needs to be changed to match the number in particle_system file on line 8 to the new amount of pics:
+```javascript
 for (var i = 0; i <= 33; i ++) {
   this.possible_images.push(loadImage('assets/' + type + '/' + i + '.jpg'));
 }

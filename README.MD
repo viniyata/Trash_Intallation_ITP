@@ -1,6 +1,7 @@
 # A trash installation for ITP recycling bins
 
 ##Images of trash items are projected on the wall going down toward the two trash cans (recycling to recycling trash to trash).
+#### [website lives here](http://oryano.github.io/Trash_Intallation_ITP/)
 The size of the canvas needs to be change according to the projection on the wall.
 
 
@@ -21,7 +22,7 @@ for (var i = 0; i <= 33; i ++) {
 ```
 #ToDos
 1. Make a website that allows uploads of new images in the correct bins.
-2. Fix the (API)[https://trash-it-oryano.c9users.io/] and have the images pulled from there.
+2. Fix the [API](https://trash-it-oryano.c9users.io/) and have the images pulled from there.
 3. Rent projector from ER and install in ITP entrance (email Rob - who gave permission already).
 4. replace bins to ones without cover.
 

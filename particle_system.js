@@ -15,16 +15,21 @@ var ParticleSystem = function(position, type) {
 
   this.addParticle = function() {
         var myImage = this.possible_images[int(random(0, this.possible_images.length))];
+        // var milliTime = millis();
+        // if(millis() % 2000 == 0) console.log("2 seconds gone");
         this.particles.push(new Particle(this.origin, myImage));
+
   };
 
   this.startSystem = function() {
-    setInterval(this.addParticle.bind(this), 2700);  //make intervals btw items
+    setInterval(this.addParticle.bind(this), 7000);  //make intervals btw items
   };
 
   this.run = function() {
   	for (var i = this.particles.length-1; i >= 0; i--) {
       var p = this.particles[i];
+      // var milliTime = millis();
+      // console.log(milliTime);
       p.run();
       if (p.isDead()) {
         this.particles.splice(i, 1);

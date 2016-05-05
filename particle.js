@@ -28,7 +28,7 @@ var Particle = function(position, img) {
   this.display = function() {
     /////////////////////item IMAGE//////////////
     imageMode(CENTER);
-    image(this.image, this.position.x, this.position.y, this.image.height/4, this.image.width/4); //this.image.height/10, this.image.width/10
+    image(this.image, this.position.x, this.position.y, this.image.height/1.5, this.image.width/1.5); //this.image.height/10, this.image.width/10
     //  stroke(200, this.lifespan);
     //  strokeWeight(2);
     //  fill(127, this.lifespan);
@@ -37,7 +37,7 @@ var Particle = function(position, img) {
 
   // Is the particle still useful?
   this.isDead = function(){
-    return this.position.y > height + 50;
+    return this.position.y > height + 100;
     // if (this.lifespan < 0.0) {
     //   return true;
     // } else {
